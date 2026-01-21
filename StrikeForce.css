@@ -1,0 +1,610 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  /* Fondo con imagen */
+  background-image: url("BG_Portfolio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Oscurecer la imagen */
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: multiply;
+
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  z-index: 1;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+
+  /* antes: background-color: #111; */
+  background-color: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(6px);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/* HERO SECTION */
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-background iframe {
+  width: 177.77vh; /* 16:9 aspect ratio */
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: none;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  height: 100%;
+  color: white;
+  z-index: 0;
+}
+
+
+/* Alineación del título a la izquierda */
+.hero-content h1 {
+  flex: 1;
+  font-size: 3rem;
+  max-width: 40%;
+  z-index: 1;
+}
+
+/* Formulario a la derecha */
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Estilo de inputs */
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form button:hover {
+  background-color: #0099cc;
+  z-index: 1;
+}
+
+
+/* VR GAMES SECTION */
+.projects-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 500px; /* Antes: 250px */
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px; /* Antes: 150px */
+  object-fit: cover;
+  z-index: 1;
+}
+
+.project-card p {
+  padding: 1rem;
+  z-index: 1;
+}
+
+/* VIRTUAL TRAVEL AGENCY */
+.virtual-travel-section {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.travel-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  z-index: 1;
+}
+
+.travel-content {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  z-index: 1;
+}
+.virtual-travel {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.centered-video {
+  margin: 2rem auto 0;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.centered-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* CLIENTS SECTION */
+.clients-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.clients-logos img {
+  height: 100px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.clients-logos img:hover {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Formulario al centro */
+.hero-content-center {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 100%;
+  color: white;
+  z-index: 0;
+}
+.contact-form-center {
+  flex: 1;
+  max-width: 800px;
+  /*display: flex;*/
+  display: grid;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Estilo de inputs */
+.contact-form-center input,
+.contact-form-center textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.contact-form-center button {
+  padding: 0.8rem;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form-center button:hover {
+  background-color: #0099cc;
+  z-index: 1;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  z-index: 1;
+}
+
+/* INTRO (imagen + presentación) */
+.intro-section{
+  padding: 4rem 2rem;
+  z-index: 1;
+}
+
+.intro-container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  /* caja elegante sobre el fondo */
+  background: rgba(17, 17, 17, 0.65);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+
+  padding: 2.5rem;
+}
+
+.intro-image{
+  flex: 0 0 520px;        /* antes 360px -> más grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-image img{
+  width: 100%;
+  max-width: 520px;       /* asegura que no se pase */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 30px rgba(0,0,0,0.55));
+}
+
+.intro-text{
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text h1{
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p{
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  max-width: 62ch;
+}
+
+.intro-buttons{
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.intro-btn{
+  display: inline-block;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.06);
+  font-weight: 600;
+}
+
+.intro-btn:hover{
+  background: rgba(255,255,255,0.10);
+}
+
+.intro-btn.primary{
+  border: none;
+  background: #00bfff;
+  color: #001018;
+}
+
+.intro-btn.primary:hover{
+  background: #0099cc;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .intro-container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-text{
+    text-align: center;
+  }
+  .intro-image{
+    width: min(420px, 92%);   /* antes 360px */
+  }
+}
+/* Botón como el resto */
+.intro-btn{
+  cursor: pointer;
+}
+
+/* Contacto inline a la derecha del botón */
+.contact-inline{
+  display: none;           /* oculto por defecto */
+  align-items: center;
+  gap: .7rem;
+  margin-left: .4rem;      /* separación del botón */
+  flex-wrap: wrap;         /* por si no cabe, baja bonito */
+}
+
+/* cuando esté activo */
+.contact-inline.show{
+  display: inline-flex;
+}
+
+/* estilo tipo “pastilla” */
+.contact-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .7rem .9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+/* ===== SOLO RESEÑAS: cards e imágenes más pequeñas ===== */
+#resenas .project-card{
+  width: 360px;            /* antes 500px */
+}
+
+#resenas .project-card img{
+  height: 220px;           /* antes 300px */
+  object-fit: contain;     /* para que no se “coma” el texto si la imagen es vertical */
+  background: rgba(0,0,0,0.15); /* opcional: relleno bonito si sobra espacio */
+}
+
+/* Si aún se te recorta el nombre, reduce padding del texto */
+#resenas .project-card p{
+  padding: 0.7rem;         /* antes 1rem */
+  font-size: 0.95rem;
+}
+/* ====== PÁGINA PROYECTO (arriba) ====== */
+.project-detail{
+  padding: 4rem 2rem 1.5rem;
+}
+
+.project-detail__card{
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(17, 17, 17, 0.65);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  padding: 2.2rem;
+}
+
+.project-detail__title{
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail__desc{
+  color: rgba(255,255,255,0.78);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 85ch;
+}
+
+.project-detail__meta{
+  margin-top: 1.3rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ====== GALERÍA ====== */
+.gallery-section{
+  padding: 1.5rem 2rem 4rem;
+}
+
+.gallery-item{
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.gallery-item p{ display:none; } /* por si te quedara algún <p> viejo */
+
+/* Para que el hover no “mueva” tanto (opcional) */
+.gallery-item:hover{
+  transform: scale(1.02);
+}
+
+/* ====== LIGHTBOX ====== */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.lightbox.show{
+  display: block;
+}
+
+.lightbox__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(4px);
+}
+
+.lightbox__content{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(1100px, 92vw);
+  height: min(80vh, 720px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* para que el click fuera cierre */
+}
+
+.lightbox__content img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  pointer-events: auto; /* permite seleccionar/click en la imagen */
+}
+/* ====== GALERÍA: imágenes (botones) el doble de grandes ====== */
+.gallery-grid .project-card{
+  width: 1000px;          /* antes 500px */
+  border-radius: 16px;
+}
+
+.gallery-grid .project-card img{
+  height: 600px;          /* antes 300px */
+  object-fit: cover;      /* o "contain" si no quieres recorte */
+}
+button.intro-btn{
+  color: #fff;
+}
+/* ===== CLIENTES: todos los logos mismo tamaño ===== */
+.clients-logos img{
+  width: 180px;        /* el tamaño “común” horizontal */
+  height: 90px;        /* altura fija */
+  object-fit: contain; /* NO recorta, no deforma */
+  opacity: 0.85;
+}

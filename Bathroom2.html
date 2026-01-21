@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO NÉSTOR DUARTE SÁNCHEZ</title>
+  <link rel="stylesheet" href="Bathroom2.css" />
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">NÉSTOR DUARTE</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="#proyectos">PROYECTOS</a>
+      <!--
+      <a href="#virtual-travel">VIRTUAL TRAVEL</a>-->
+      <a href="#clientes">CLIENTES</a>
+      <a href="#resenas">ALUMNOS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+
+<!--
+  <section class="hero">
+    <div class="video-background">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=hCAUkrmY3cI&ab_channel=VRAirsoft"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>--><!--
+    <div class="hero-content">
+      <h1> </h1>
+      
+      <form class="contact-form">
+        <h3>CONTACT</h3>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">SEND</button>
+      </form>
+      
+      <form class="contact-form" action="enviar.php" method="POST">
+        <h3>CONTACT</h3>
+        <input type="text" name="nombre" placeholder="Name" required />
+        <input type="email" name="correo" placeholder="Email" required />
+        <textarea name="mensaje" placeholder="Message" required></textarea>
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </section>-->
+
+  <!-- PROYECTO STRIKE FORCE -->
+<section class="project-detail">
+  <div class="project-detail__card">
+    <h1 class="project-detail__title">BATHROOM 2 - DS ARQUITECTURA</h1>
+
+    <p class="project-detail__desc">
+      Con DS Arquitectura, se diseñó un baño para un cliente, y se experimentó, con diferentes diseños tanto de paredes, para ver que podría quedar mejor, para su posterior aprobación del cliente y contrucción. En este proyecto hice el modelado, textura, iluminación y render, siguiendo unos planos.
+    </p>
+
+    <ul class="project-detail__meta">
+      <li><strong>Rol:</strong> 3D Artist</li>
+      <li><strong>Engine:</strong> 3DS Max + Vray</li>
+      <li><strong>Plataforma:</strong> Web</li>
+      <li><strong>Duración:</strong> Marzo 2021 - Junio 2021</li>
+    </ul>
+  </div>
+</section>
+
+<!-- GALERÍA (click para ampliar) -->
+<section class="gallery-section">
+  <div class="projects-grid gallery-grid">
+
+    <!-- OJO: en una página de detalle, NO enlaces a otras páginas, solo imágenes -->
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2-opcion1.jpg" alt="Bathroom2-opcion1" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2-opcion2.jpg" alt="Bathroom2-opcion2" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2-opcion3.jpg" alt="Bathroom2-opcion3" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2-opcion4.jpg" alt="Bathroom2-opcion4" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2_1-opcion1.jpg" alt="Bathroom2_1-opcion1" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2_1-opcion2.jpg" alt="Bathroom2_1-opcion2" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2_1-opcion3.jpg" alt="Bathroom2_1-opcion3" />
+    </button>
+
+    <button class="project-card gallery-item" type="button">
+      <img src="Bathroom2_1-opcion4.jpg" alt="Bathroom2_1-opcion4" />
+    </button>
+    
+    <!-- añade todas las que quieras... -->
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+
+  <figure class="lightbox__content" role="dialog" aria-modal="true">
+    <img id="lightboxImg" src="" alt="" />
+  </figure>
+</div>
+
+
+
+
+  <!-- VR GAMES SECTION -->
+  <section id="proyectos" class="projects-section">
+    <h2>PROYECTOS</h2>
+    <div class="projects-grid">
+      <!--<a href="StrikeForce.html" class="project-card" target="_blank" rel="noopener noreferrer">-->
+      <a href="StrikeForce.html" class="project-card">
+        <img src="StrikeForce_minia.png" alt="Strike Force" />
+        <p>Strike Force - Virtual Revolution</p>
+      </a>
+      <a href="Galaxtron.html" class="project-card">
+        <img src="Galaxtron_Minia.png" alt="Galaxtron" />
+        <p>Galaxtron - Virtual Revolution</p>
+      </a>      
+      <a href="MaterialesGuildAventures.html" class="project-card">
+        <img src="1 Materials_minia.png" alt="Materiales" />
+        <p>Materiales - Guilds Adventures</p>
+      </a>
+      <a href="Cementary.html" class="project-card">
+        <img src="Cementary_minia.png" alt="Cementary" />
+        <p>Cementary - Guilds Adventures</p>
+      </a>
+      <a href="ScultureColuseum.html" class="project-card">
+        <img src="1ScultureColuseum_minia.png" alt="ScultureColuseum" />
+        <p>Sculture Coluseum - Guilds Adventures</p>
+      </a>
+      <a href="PresentadorDePersonajes.html" class="project-card">
+        <img src="1 Presentador de personajes_minia.png" alt="PresentadorDePersonajes" />
+        <p>Presentador de personajes - Guilds Adventures</p>
+      </a>
+      </a>
+      <a href="Laud.html" class="project-card">
+        <img src="1Laud_minia.png" alt="Laud" />
+        <p>Laud - Guilds Adventures</p>
+      </a>
+      </a>
+      <a href="Asset.html" class="project-card">
+        <img src="1 Asset_minia.png" alt="Asset" />
+        <p>Asset - Guilds Adventures</p>
+      </a>
+      </a>
+      <a href="Uttopion.html" class="project-card">
+        <img src="1 Uttopion_minia.png" alt="Uttopion" />
+        <p>Uttopion</p>
+      </a>
+      </a>
+      <a href="Single family Home.html" class="project-card">
+        <img src="SingleFamilyHome_minia.png" alt="Single family Home" />
+        <p>Single family Home - DS Arquitectura</p>
+      </a>
+      </a>
+      <a href="Bedroom.html" class="project-card">
+        <img src="Bedroom_minia.png" alt="Bedroom" />
+        <p>Bedroom - DS Arquitectura</p>
+      </a>
+      </a>
+      <a href="Bathroom2.html" class="project-card">
+        <img src="Bathroom2_minia.png" alt="Bathroom 2" />
+        <p>Bathroom 2 - DS Arquitectura</p>
+      </a>
+      </a>
+      <a href="Bathroom.html" class="project-card">
+        <img src="Bathroom_minia.png" alt="Bathroom" />
+        <p>Bathroom - DS Arquitectura</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- RESEÑAS DE ALUMNOS -->
+  <section id="resenas" class="projects-section">
+  <h2>RESEÑAS DE ALUMNOS</h2>
+  <div class="projects-grid">
+    <a class="project-card">
+      <img src="AlbaAlumna.png" alt="Alba" />
+      <p>Alba</p>
+    </a>
+    <a class="project-card">
+      <img src="PatriciaAlumna.png" alt="Patricia" />
+      <p>Patricia</p>
+    </a>
+    <a class="project-card">
+      <img src="CarlosAlumno.png" alt="Carlos" />
+      <p>Carlos</p>
+    </a>
+    <a class="project-card">
+      <img src="LauraAlumna.png" alt="Laura" />
+      <p>Laura</p>
+    </a>
+  </div>
+<h2>CONTACTA Y RESERVA TU CLASE</h2>
+  <button class="intro-btn btn-contact" type="button">Contactar</button>
+<div class="contact-inline" aria-hidden="true">
+  <span class="contact-pill">📧 nestorduarte1995@gmail.com</span>
+  <span class="contact-pill">📞 +34 675556536</span>
+</div>
+</section>
+
+
+  
+  <!-- CLIENTS & PARTNERS -->
+  <section id="clientes" class="clients-section">
+    <h2>CLIENTES</h2>
+    <div class="clients-logos">
+      <img src="LOGO_VR_blancorojo.png" alt="Client 1" />
+      <img src="LOGO_LionsRoarGames.png" alt="Client 2" />
+      <img src="LOGO_Uttopion.png" alt="Client 3" /> 
+      <img src="LOGO_DS.png" alt="Client 4" />
+    </div>
+  </section>
+
+  <!-- OUR TEAM --><!-- 
+  <section id="about" class="team-section">
+    <h2>Our Team</h2>
+    <div class="projects-grid">
+      <a href="https://www.linkedin.com/in/ricardo-soto-064a9983/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="RicardoSoto.jpg" alt="Ricardo Soto" />
+        <p>Ricardo Soto</p>
+        <p>CEO</p>
+      </a>
+      <a href="https://www.linkedin.com/in/n%C3%A9stor-duarte-s%C3%A1nchez-5b495a28/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="NestorDuarteSanchez.jpg" alt="Nestor Duarte Sanchez" />
+        <p>Néstor Duarte</p>
+        <p>SubDirector / Lead 3D</p>
+      </a>
+      <a href="https://www.linkedin.com/in/daniel-atienza-rubi-1a93a4141/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="DanielAtienza.jpg" alt="Daniel Atienza" />
+        <p>Daniel Atienza</p>
+        <p>CTO</p>
+      </a>
+      <a href="https://www.linkedin.com/in/jes%C3%BAs-romero-garcia-5a758586/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="JesusRomero.jpg" alt="Jesus Romero" />
+        <p>Jesús Romero</p>
+        <p>Art Director / Lighting Artist</p>
+      </a>
+      <a href="https://www.linkedin.com/in/davidmm1973/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="DavidMcNicholl.jpg" alt="David McNicholl" />
+        <p>David McNicholl</p>
+        <p>Postproductor</p>
+      </a>
+      <a href="https://www.linkedin.com/in/germanavilasumariva/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="GermánAntonioAvila.jpg" alt="Germán A. Avila" />
+        <p>Germán A Avila</p>
+        <p>Game Developer</p>
+      </a>
+      <a href="https://www.linkedin.com/in/ana-vicente-sienes/" class="project-card" target="_blank" rel="noopener noreferrer">
+        <img src="AnaVicente.jpg" alt="Ana Vicente" />
+        <p>Ana Vicente</p>
+        <p>Character 3D Artist / Technical Artist</p>
+      </a>
+    </div>-->
+    <!-- Aquí puedes agregar miembros del equipo con su foto y descripción -->
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="team-section">
+    <h2>CONTACT</h2>
+    <h3>nestorduarte1995@gmail.com</h3>
+    <h3>+34 675556536</h3>
+    <!--
+    <div class="hero-content-center">
+      <form class="contact-form-center">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+    -->
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Néstor Duarte Sánchez Portfolio - All Rights Reserved</p>
+  </footer>
+<script>
+  document.querySelectorAll(".btn-contact").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const box = btn.nextElementSibling; // la caja justo después del botón
+      if (!box || !box.classList.contains("contact-inline")) return;
+
+      box.classList.toggle("show");
+      const isOpen = box.classList.contains("show");
+      box.setAttribute("aria-hidden", String(!isOpen));
+    });
+  });
+</script>
+
+</body>
+</html>
